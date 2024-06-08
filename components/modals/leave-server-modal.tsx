@@ -57,7 +57,7 @@ const LeaveServerModal = () => {
         <DialogFooter className="bg-gray-100 px-6 py-4">
           <div className="flex items-center justify-between w-full">
             <Button disabled={isLoading} onClick={onClose} variant="ghost">
-              Cancle
+              Cancel
             </Button>
             <Button variant="primary" onClick={onClick} disabled={isLoading}>
               Confirm

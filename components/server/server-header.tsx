@@ -28,7 +28,7 @@ interface ServerHeaderProps {
 const ServerHeader: React.FC<ServerHeaderProps> = ({ server, role }) => {
   const { onOpen } = useModal();
   const isAdmin = role === MemberRole.ADMIN;
-  const isModerator = isAdmin || role === MemberRole.MODERATOR;
+  const isModerator = isAdmin || role === MemberRole.MODERATOR; 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="focus:outline-none2" asChild>

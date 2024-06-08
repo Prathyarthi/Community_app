@@ -214,7 +214,7 @@ export const ChatItem: React.FC<ChatItemProps> = ({
                 </Button>
               </form>
               <span className="text-[10px] mt-1 text-zinc-400">
-                Press escape to cancle, enter to save
+                Press escape to cancel, enter to save
               </span>
             </Form>
           )}
