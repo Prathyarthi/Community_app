@@ -103,7 +103,7 @@ const EditChannelModal = () => {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Edit Channel
+            Edit Classroom
           </DialogTitle>
         </DialogHeader>
 
@@ -116,11 +116,11 @@ const EditChannelModal = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70">
-                      Channel Name
+                      Classroom Name
                     </FormLabel>
                     <FormControl>
                       <Input
-                        placeholder="Enter a channel name"
+                        placeholder="Enter a classroom name"
                         className="bg-zinc-300/50 border-0 focus-visible:ring-0 text-black focus-visible:ring-offset-0"
                         disabled={isLoading}
                         {...field}
@@ -136,7 +136,7 @@ const EditChannelModal = () => {
                 name="type"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Channel Type</FormLabel>
+                    <FormLabel>Classroom Type</FormLabel>
                     <Select
                       disabled={isLoading}
                       onValueChange={field.onChange}

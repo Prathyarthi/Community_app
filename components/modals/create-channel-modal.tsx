@@ -110,7 +110,7 @@ const CreateChannelModal = () => {
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
-            Create a Channel
+            Create a Classroom
           </DialogTitle>
         </DialogHeader>
 
@@ -123,7 +123,7 @@ const CreateChannelModal = () => {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel className="uppercase text-xs font-bold text-zinc-500 dark:text-secondary/70">
-                      Channel Name
+                      Classroom Name
                     </FormLabel>
                     <FormControl>
                       <Input
@@ -143,7 +143,7 @@ const CreateChannelModal = () => {
                 name="type"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Channel Type</FormLabel>
+                    <FormLabel>Classroom Type</FormLabel>
                     <Select
                       disabled={isLoading}
                       onValueChange={field.onChange}

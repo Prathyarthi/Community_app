@@ -78,14 +78,14 @@ const ServerSidebar: React.FC<ServerSidebarProps> = async ({ serverId }) => {
   )?.role;
 
   return (
-    <div className="flex flex-col h-full text-primary w-full dark:bg-[#2B2D31] bg-[#F2F3F5]">
+    <div className="flex flex-col h-full text-primary w-full dark:bg-[#1a1e21] bg-[#F2F3F5]">
       <ServerHeader server={server} role={role} />
       <ScrollArea className="flex-1 px-3">
         <div className="mt-2">
           <ServerSearch
             data={[
               {
-                label: "Text Channels",
+                label: "Text Classrooms",
                 type: "channel",
                 data: textChannels?.map((channel) => ({
                   icon: iconMap[channel.type],
@@ -94,7 +94,7 @@ const ServerSidebar: React.FC<ServerSidebarProps> = async ({ serverId }) => {
                 })),
               },
               {
-                label: "Voice Channels",
+                label: "Voice Classrooms",
                 type: "channel",
                 data: audioChannels?.map((channel) => ({
                   icon: iconMap[channel.type],
@@ -103,7 +103,7 @@ const ServerSidebar: React.FC<ServerSidebarProps> = async ({ serverId }) => {
                 })),
               },
               {
-                label: "Video Channels",
+                label: "Video Classrooms",
                 type: "channel",
                 data: vidioChannels?.map((channel) => ({
                   icon: iconMap[channel.type],
@@ -131,7 +131,7 @@ const ServerSidebar: React.FC<ServerSidebarProps> = async ({ serverId }) => {
               sectionType="channels"
               channelType={ChannelType.TEXT}
               role={role}
-              label="Text Channels"
+              label="Text Classrooms"
             />
             <div className="space-y-[2px]">
               {textChannels.map((channel) => (
@@ -152,7 +152,7 @@ const ServerSidebar: React.FC<ServerSidebarProps> = async ({ serverId }) => {
               sectionType="channels"
               channelType={ChannelType.AUDIO}
               role={role}
-              label="Audio Channels"
+              label="Audio Classrooms"
             />
             <div className="space-y-[2px]">
               {audioChannels.map((channel) => (
@@ -173,7 +173,7 @@ const ServerSidebar: React.FC<ServerSidebarProps> = async ({ serverId }) => {
               sectionType="channels"
               channelType={ChannelType.VIDEO}
               role={role}
-              label="Video Channels"
+              label="Video Classrooms"
             />
             <div className="space-y-[2px]">
               {vidioChannels.map((channel) => (

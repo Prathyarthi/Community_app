@@ -62,7 +62,7 @@ export const ChatItem: React.FC<ChatItemProps> = ({
 
   const onMemberClick = () => {
 
-    if(currentMember.id === member.id) return;
+    if (currentMember.id === member.id) return;
 
     router.push(`/servers/${params?.serverId}/conversations/${member.id}`);
   }
@@ -174,7 +174,7 @@ export const ChatItem: React.FC<ChatItemProps> = ({
               className={cn(
                 "text-sm text-zinc-600 dark:text-zinc-300",
                 deleted &&
-                  "italic text-zinc-500 dark:text-zinc-400 text-xs mt-1"
+                "italic text-zinc-500 dark:text-zinc-400 text-xs mt-1"
               )}
             >
               {content}
@@ -200,7 +200,7 @@ export const ChatItem: React.FC<ChatItemProps> = ({
                         <div className="relative w-full">
                           <Input
                             disabled={isLoading}
-                            className="p-2 bg-zinc-200/90 dark:bg-zinc-700/75 border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 textzinc-600 dark:text-zinc-200"
+                            className="p-2 bg-zinc-200/90 dark:bg-black border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0 textzinc-600 dark:text-zinc-200"
                             placeholder="Edited message..."
                             {...field}
                           />

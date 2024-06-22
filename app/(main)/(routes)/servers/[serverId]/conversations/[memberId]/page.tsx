@@ -53,7 +53,7 @@ const MemberIdPage: React.FC<MemberIdPageProps> = async ({
   if (!otherMember) return redirect(`/servers/${serverId}`);
 
   return (
-    <div className="bg-white dark:bg-[#313338] flex flex-col h-full">
+    <div className="bg-white dark:bg-[#14171A] flex flex-col h-full">
       <ChatHeader
         name={otherMember.profile.name}
         type="conversation"

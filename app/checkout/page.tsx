@@ -2,8 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import "./checkout.css";
+import { IndianRupee } from "lucide-react";
 
-// Define the types for the props
 interface MessageProps {
   message: string;
 }
@@ -13,15 +13,15 @@ const ProductDisplay: React.FC = () => (
     <div className="product">
       <img
         src="https://i.imgur.com/EHyR2nP.png"
-        alt="The cover of Stubborn Attachments"
+        alt="CampusConnect"
       />
       <div className="description">
-        <h3>Stubborn Attachments</h3>
-        <h5>$20.00</h5>
+        <h1 className="text-xl text-black">Subscribe to CampusConnect</h1>
+        <h5 className="flex text-xl items-center">{<IndianRupee className="text-lg" />} 1200</h5>
       </div>
     </div>
     <form action="api/create-checkout-session" method="POST">
-      <button type="submit">Checkout</button>
+      <button type="submit">Subscribe?</button>
     </form>
   </section>
 );

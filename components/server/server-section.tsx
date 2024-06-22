@@ -29,7 +29,7 @@ export const ServerSection: React.FC<ServerSectionProps> = ({
         {label}
       </p>
       {role !== MemberRole.GUEST && sectionType === "channels" && (
-        <ActionTooltip label="Create Channel" side="top">
+        <ActionTooltip label="Create Classroom" side="top">
           <button
             className="text-zinc-500 hover:text-zinc-600 dark:text-zinc-400 dark:hover:text-zinc-300 transition"
             onClick={() => onOpen("createChannel", { channelType })}

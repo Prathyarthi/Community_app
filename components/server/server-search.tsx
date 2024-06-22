@@ -75,7 +75,7 @@ export const ServerSearch: React.FC<ServerSidebarProps> = ({ data }) => {
         </kbd>
       </button>
       <CommandDialog open={open} onOpenChange={setOpen}>
-        <CommandInput placeholder="Search all channels and members" />
+        <CommandInput placeholder="Search all classrooms and members" />
         <CommandList>
           <CommandEmpty>No results found</CommandEmpty>
           {data.map(({ data, label, type }) => {

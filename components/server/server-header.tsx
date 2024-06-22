@@ -52,7 +52,7 @@ const ServerHeader: React.FC<ServerHeaderProps> = ({ server, role }) => {
             className="px-3 py-2 text-sm cursor-pointer"
             onClick={() => onOpen("editServer", { server })}
           >
-            Server Settings
+            Community Settings
             <Settings className="h-4 w-4 ml-auto" />
           </DropdownMenuItem>
         )}
@@ -72,7 +72,7 @@ const ServerHeader: React.FC<ServerHeaderProps> = ({ server, role }) => {
             className="px-3 py-2 text-sm cursor-pointer"
             onClick={() => onOpen("createChannel")}
           >
-            Create Channel
+            Create Classroom
             <PlusCircle className="h-4 w-4 ml-auto" />
           </DropdownMenuItem>
         )}
@@ -82,7 +82,7 @@ const ServerHeader: React.FC<ServerHeaderProps> = ({ server, role }) => {
             className="text-rose-500 px-3 py-2 text-sm cursor-pointer"
             onClick={() => onOpen("deleteServer", { server })}
           >
-            Delete Server
+            Delete Community
             <Trash className="h-4 w-4 ml-auto" />
           </DropdownMenuItem>
         )}
@@ -91,7 +91,7 @@ const ServerHeader: React.FC<ServerHeaderProps> = ({ server, role }) => {
             className="text-rose-500 px-3 py-2 text-sm cursor-pointer"
             onClick={() => onOpen("leaveServer", { server })}
           >
-            Leave Server
+            Leave Community
             <LogOut className="h-4 w-4 ml-auto" />
           </DropdownMenuItem>
         )}
